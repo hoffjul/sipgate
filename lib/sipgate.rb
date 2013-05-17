@@ -25,11 +25,7 @@ class Sipgate
   end
   
   def call(*args)
-    begin
-      response = @client.call(*args)
-    rescue
-      response
-    end
+    @client.call(*args)
   end
     
 end
